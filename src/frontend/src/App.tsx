@@ -1008,8 +1008,8 @@ function Contact() {
     {
       icon: <Mail size={22} />,
       label: "Email",
-      value: "mohamadshokin@gmail.com",
-      href: "mailto:mohamadshokin@gmail.com",
+      value: "mohammadshokinkham@gmail.com",
+      href: "mailto:mohammadshokinkham@gmail.com",
       ocid: "contact.email.link",
     },
     {
@@ -1114,35 +1114,6 @@ function Contact() {
   );
 }
 
-// ── Footer ────────────────────────────────────────────────────────────────
-function Footer() {
-  const year = new Date().getFullYear();
-  const utm = encodeURIComponent(
-    typeof window !== "undefined" ? window.location.hostname : "",
-  );
-  return (
-    <footer
-      style={{
-        borderTop: "1px solid rgba(255,255,255,0.06)",
-        padding: "28px 24px",
-        textAlign: "center",
-        color: "#4B5563",
-        fontSize: 13,
-      }}
-    >
-      © {year} Mohammad Shokin. Built with ❤️ using{" "}
-      <a
-        href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${utm}`}
-        target="_blank"
-        rel="noreferrer"
-        style={{ color: "#3B82F6", textDecoration: "none" }}
-      >
-        caffeine.ai
-      </a>
-    </footer>
-  );
-}
-
 // ── App ───────────────────────────────────────────────────────────────────
 export default function App() {
   useScrollReveal();
@@ -1161,7 +1132,6 @@ export default function App() {
         <Resume />
         <Contact />
       </main>
-      <Footer />
     </div>
   );
 }
